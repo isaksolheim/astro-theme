@@ -1,0 +1,24 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<header>
+  <nav class="flex gap-4 my-16">
+    <a href="/">
+      <img class="w-28 h-28" src="/blog-placeholder-4.jpg" alt="textures" />
+    </a>
+
+    <div class="flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl font-medium"><a>{SITE_TITLE}</a></h2>
+        <p class="text-gray-600">a blog about whatever!</p>
+      </div>
+
+      <div class="internal-links">
+        <HeaderLink href="/">home</HeaderLink>
+        <HeaderLink href="/about">about</HeaderLink>
+      </div>
+    </div>
+  </nav>
+</header>
